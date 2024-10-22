@@ -6,15 +6,18 @@ import (
 )
 
 func main() {
+	// ambil waktu sekarang
 	var now time.Time = time.Now()
 	fmt.Println(now)
-
+	
+	// ambil waktu tertentu
 	var utc time.Time = time.Date(2009, time.August, 17, 0, 0, 0, 0, time.UTC)
 	fmt.Println(utc)
 	fmt.Println(utc.Local())
-
+    
 	formatter := "2006-01-02 15:04:05"
 
+    // format waktu
 	value := "2020-10-10 10:10:10"
 	// value := "ASAL"
 	valueTime, err := time.Parse(formatter, value)
