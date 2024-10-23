@@ -25,6 +25,7 @@ func GetById(id string) error {
 }
 
 func main() {
+	// memanggil fungsi GetById
 	err := GetById("aidil")
 	if err != nil {
 		if errors.Is(err, ValidationError) {

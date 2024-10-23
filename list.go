@@ -8,11 +8,12 @@ import (
 func main() {
 	// struktur data double linked list
 	var data *list.List = list.New()
-
+	// menambahkan data ke dalam list
 	data.PushBack("Aidil")
 	data.PushBack("Adam")
 	data.PushBack("Baik")
 
+	// mengambil data dari depan
 	var head *list.Element = data.Front()
 	fmt.Println(head.Value) // aidil
 

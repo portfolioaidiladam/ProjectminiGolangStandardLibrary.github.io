@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"time"
 )
-
+// Duration adalah tipe data yang digunakan untuk merepresentasikan waktu dalam golang			
 func main() {
+	// membuat duration		
 	var duration1 time.Duration = 100 * time.Second
 	var duration2 time.Duration = 10 * time.Millisecond
 	var duration3 time.Duration = duration1 - duration2
